@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>课程系列总览</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    .page {
+      max-width: 1520px;
+      margin: 0 auto;
+      padding: 18px 16px 40px;
+    }
+    .section {
+      margin-bottom: 34px;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 14px;
+    }
+    .section-title {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px 18px 16px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      min-height: 245px;
+      display: flex;
+      flex-direction: column;
+    }
+    .tag {
+      display: inline-block;
+      width: fit-content;
+      font-size: 12px;
+      color: #666;
+      background: #f2f2f2;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 14px;
+      line-height: 1;
+    }
+    .course-title {
+      margin: 0 0 12px;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.55;
+      color: #222;
+    }
+    .course-desc {
+      margin: 0 0 16px;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.9;
+      flex: 1;
+    }
+    .meta {
+      font-size: 16px;
+      font-weight: 700;
+      color: #111;
+      line-height: 1.2;
+    }
+    @media (max-width: 1200px) {
+      .list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .page { padding: 16px 12px 28px; }
+      .section-title { font-size: 20px; }
+      .course-title { font-size: 16px; }
+      .list { grid-template-columns: 1fr; }
+      .card { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Python从入门到精通</h2>
+      </div>
+
+      <div class="list">
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第一章 让电脑听你的话 Python 编程入门</h3>
+          <p class="course-desc">从安装配置到基础语法 再到判断 循环 文字处理和小程序实战 让零基础学习者真正入门</p>
+          <div class="meta">￥899.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第二章 Excel 做不到的事用它来做 pandas 数据处理</h3>
+          <p class="course-desc">围绕 Excel 和 CSV 读取 定位 拼接 筛选和清洗等常见任务 让表格处理更高效</p>
+          <div class="meta">￥599.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第三章 让数据说话 用图表讲故事 Matplotlib</h3>
+          <p class="course-desc">从基础绘图到多图布局 标注 对比 分布和趋势表达 让数据结果更直观更容易展示</p>
+          <div class="meta">￥599.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第四章 大批量数据也不怕 Numpy 高效计算</h3>
+          <p class="course-desc">从数组到批量计算 索引 行列重组 广播机制 数学函数和矩阵入门 帮助处理更复杂的数据任务</p>
+          <div class="meta">￥599.00</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">大模型 Agent 从入门到精通</h2>
+      </div>
+
+      <div class="list">
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第一章 先看懂智能体到底能替你做什么</h3>
+          <p class="course-desc">从行业变化 核心原理 方案选型到模型升级趋势 先把智能体为什么值得学 适合解决什么问题讲清楚</p>
+          <div class="meta">￥99.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第二章 不会写代码也能做出自己的 AI 应用</h3>
+          <p class="course-desc">围绕 Dify Docker 私有部署 本地模型接入 Xinference 与 GPU 配置 从零搭起真正可运行的 AI 应用</p>
+          <div class="meta">￥599.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第三章 看懂智能体为什么能一步一步思考和行动</h3>
+          <p class="course-desc">从常见工作方式 提示词设计 推理引擎到业务案例 帮你理解智能体如何分解任务 逐步思考并完成执行</p>
+          <div class="meta">￥299.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第四章 让智能体真正连上工具和外部世界</h3>
+          <p class="course-desc">围绕 Function Call MCP 数据库 浏览器与开发工具 让智能体真正学会调工具 访系统 连外部服务</p>
+          <div class="meta">￥1199.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第五章 让多个智能体彼此听得懂也能一起干活</h3>
+          <p class="course-desc">聚焦多智能体协作中的通信 协议和角色分工 帮你理解多个智能体如何共享信息 协同决策并共同完成任务</p>
+          <div class="meta">￥599.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第六章 搭出更复杂更可靠的多智能体系统</h3>
+          <p class="course-desc">从框架选型 系统架构到可靠性设计 学会搭建更复杂 更稳定 更可扩展的多智能体系统</p>
+          <div class="meta">￥1599.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第七章 让数据自己开口说话</h3>
+          <p class="course-desc">以自然语言查数为目标 结合数据接入 检索 问答与表达流程 让数据真正能被直接调用和理解</p>
+          <div class="meta">￥999.00</div>
+        </div>
+
+        <div class="card">
+          <div class="tag">专栏</div>
+          <h3 class="course-title">第八章 做出真正能落地的企业级智能客服</h3>
+          <p class="course-desc">面向企业场景构建智能客服 从需求分析 架构设计到落地流程 做出真正可上线 可维护的客服系统</p>
+          <div class="meta">￥3799.00</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
